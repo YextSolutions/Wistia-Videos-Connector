@@ -1,0 +1,42 @@
+{
+  "$id": "wistiaVideos_mediaType",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Media Type",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "optionType": {
+      "option": [
+        {
+          "displayName": "Video",
+          "textValue": "VIDEO"
+        },
+        {
+          "displayName": "Audio",
+          "textValue": "AUDIO"
+        },
+        {
+          "displayName": "Image",
+          "textValue": "IMAGE"
+        },
+        {
+          "displayName": "PdfDocument",
+          "textValue": "PDFDOCUMENT"
+        },
+        {
+          "displayName": "MicrosoftOfficeDocument",
+          "textValue": "MICROSOFTOFFICEDOCUMENT"
+        },
+        {
+          "displayName": "Swf",
+          "textValue": "SWF"
+        },
+        {
+          "displayName": "UnknownType",
+          "textValue": "UNKNOWNTYPE"
+        }
+      ]
+    }
+  },
+  "typeId": "option"
+}

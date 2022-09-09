@@ -1,0 +1,14 @@
+{
+  "$id": "wistiaVideos_projectName",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "Name of the Wistia Project this media belongs to.",
+  "displayName": "Project Name",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "stringType": {
+      "stereotype": "SIMPLE"
+    }
+  },
+  "typeId": "string"
+}

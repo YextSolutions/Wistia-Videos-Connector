@@ -1,0 +1,199 @@
+{
+  "$id": "wistiaVideosConnector",
+  "$schema": "https://schema.yext.com/config/km/connector/v3",
+  "displayName": "Wistia Videos Connector",
+  "entityType": "wistia_Videos",
+  "source": {
+    "sourceConfig": {
+      "nativeSourceConfig": {
+        "source": "wistia",
+        "operation": "fetchVideos",
+        "inputs": {
+          "bearerToken": "${{bearerToken}}"
+        }
+      }
+    },
+    "selectors": [
+      {
+        "type": "JSON",
+        "header": "Entity ID",
+        "path": "id"
+      },
+      {
+        "type": "JSON",
+        "header": "Name",
+        "path": "name"
+      },
+      {
+        "type": "JSON",
+        "header": "Media Type",
+        "path": "type"
+      },
+      {
+        "type": "JSON",
+        "header": "Date Posted",
+        "path": "created"
+      },
+      {
+        "type": "JSON",
+        "header": "Date Updated",
+        "path": "updated"
+      },
+      {
+        "type": "JSON",
+        "header": "Video Duration",
+        "path": "duration"
+      },
+      {
+        "type": "JSON",
+        "header": "Description",
+        "path": "description"
+      },
+      {
+        "type": "JSON",
+        "header": "Thumbnail Photo",
+        "path": "thumbnail.url"
+      },
+      {
+        "type": "JSON",
+        "header": "Project Name",
+        "path": "project.name"
+      },
+      {
+        "type": "JSON",
+        "header": "Original URL",
+        "path": "assets[0].url"
+      },
+      {
+        "type": "JSON",
+        "header": "Assets URLs",
+        "path": "assets[].url"
+      },
+      {
+        "type": "JSON",
+        "header": "Assets Types",
+        "path": "assets[].type"
+      },
+      {
+        "type": "JSON",
+        "header": "Section",
+        "path": "section"
+      }
+    ]
+  },
+  "transforms": [
+    {
+      "extractText": {
+        "inputHeader": "Date Posted",
+        "newColumnHeader": "Date Posted - Formatted",
+        "extractOperation": "ALL_TEXT_BEFORE",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": "T",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Date Updated",
+        "newColumnHeader": "Date Updated - Formatted",
+        "extractOperation": "ALL_TEXT_BEFORE",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": "T",
+            "ignoreCase": false
+          }
+        }
+      }
+    }
+  ],
+  "mappings": [
+    {
+      "field": "wistiaVidoes_assetsList",
+      "header": "Assets Types",
+      "subfieldPath": [
+        {
+          "name": "singleAsset"
+        },
+        {
+          "name": "assetType"
+        }
+      ]
+    },
+    {
+      "field": "wistiaVideos_videoURL",
+      "header": "Original URL",
+      "subfieldPath": []
+    },
+    {
+      "field": "richTextDescription",
+      "header": "Description",
+      "subfieldPath": []
+    },
+    {
+      "field": "wistiaVideos_thumbnailPhoto",
+      "header": "Thumbnail Photo",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "field": "datePosted",
+      "header": "Date Posted - Formatted",
+      "subfieldPath": []
+    },
+    {
+      "field": "wistiaVideos_section",
+      "header": "Section",
+      "subfieldPath": []
+    },
+    {
+      "field": "name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "wistiaVideos_projectName",
+      "header": "Project Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "entityId",
+      "header": "Entity ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "wistiaVideos_dateUpdated",
+      "header": "Date Updated - Formatted",
+      "subfieldPath": []
+    },
+    {
+      "field": "wistiaVideos_duration",
+      "header": "Video Duration",
+      "subfieldPath": []
+    },
+    {
+      "field": "wistiaVideos_mediaType",
+      "header": "Media Type",
+      "subfieldPath": []
+    },
+    {
+      "field": "wistiaVidoes_assetsList",
+      "header": "Assets URLs",
+      "subfieldPath": [
+        {
+          "name": "singleAsset"
+        },
+        {
+          "name": "assetURL"
+        }
+      ]
+    }
+  ]
+}

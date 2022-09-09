@@ -1,0 +1,20 @@
+{
+  "$id": "wistia_videos",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "Videos-default",
+  "entityType": "wistia_Videos",
+  "fields": [
+    "datePosted",
+    "description",
+    "richTextDescription",
+    "wistiaVideos_dateUpdated",
+    "wistiaVideos_duration",
+    "wistiaVideos_mediaType",
+    "wistiaVideos_projectName",
+    "wistiaVideos_section",
+    "wistiaVideos_thumbnailPhoto",
+    "wistiaVideos_videoURL",
+    "wistiaVidoes_assetsList"
+  ],
+  "required": []
+}

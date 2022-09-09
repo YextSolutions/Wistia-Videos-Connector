@@ -1,0 +1,8 @@
+{
+  "$id": "wistiaVidoes_assetsList",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Assets List",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "typeId": "wistia_assetsList"
+}
