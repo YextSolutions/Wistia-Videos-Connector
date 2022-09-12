@@ -1,8 +1,8 @@
 {
-  "$id": "wistiaVideosConnector",
+  "$id": "wista_wistiaVideosConnector",
   "$schema": "https://schema.yext.com/config/km/connector/v3",
   "displayName": "Wistia Videos Connector",
-  "entityType": "wistia_Videos",
+  "entityType": "wistia_wistiaVideos",
   "source": {
     "sourceConfig": {
       "nativeSourceConfig": {
@@ -113,7 +113,7 @@
   ],
   "mappings": [
     {
-      "field": "wistiaVidoes_assetsList",
+      "field": "wistia_assetsList",
       "header": "Assets Types",
       "subfieldPath": [
         {
@@ -125,7 +125,7 @@
       ]
     },
     {
-      "field": "wistiaVideos_videoURL",
+      "field": "wistia_videoURL",
       "header": "Original URL",
       "subfieldPath": []
     },
@@ -135,7 +135,7 @@
       "subfieldPath": []
     },
     {
-      "field": "wistiaVideos_thumbnailPhoto",
+      "field": "wistia_thumbnailPhoto",
       "header": "Thumbnail Photo",
       "subfieldPath": [
         {
@@ -149,7 +149,7 @@
       "subfieldPath": []
     },
     {
-      "field": "wistiaVideos_section",
+      "field": "wistia_section",
       "header": "Section",
       "subfieldPath": []
     },
@@ -159,7 +159,7 @@
       "subfieldPath": []
     },
     {
-      "field": "wistiaVideos_projectName",
+      "field": "wistia_projectName",
       "header": "Project Name",
       "subfieldPath": []
     },
@@ -169,22 +169,22 @@
       "subfieldPath": []
     },
     {
-      "field": "wistiaVideos_dateUpdated",
+      "field": "wistia_dateUpdated",
       "header": "Date Updated - Formatted",
       "subfieldPath": []
     },
     {
-      "field": "wistiaVideos_duration",
+      "field": "wistia_duration",
       "header": "Video Duration",
       "subfieldPath": []
     },
     {
-      "field": "wistiaVideos_mediaType",
+      "field": "wistia_mediaType",
       "header": "Media Type",
       "subfieldPath": []
     },
     {
-      "field": "wistiaVidoes_assetsList",
+      "field": "wistia_assetsList",
       "header": "Assets URLs",
       "subfieldPath": [
         {

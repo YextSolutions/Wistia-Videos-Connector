@@ -1,5 +1,5 @@
 {
-  "$id": "wistia_Videos",
+  "$id": "wistiaVideos_Videos",
   "$schema": "https://schema.yext.com/config/km/entity-type/v2",
   "description": "Custom Entity Type to store videos pulled from Wistia data connector.",
   "displayName": "Videos",
