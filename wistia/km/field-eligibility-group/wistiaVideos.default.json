@@ -1,5 +1,5 @@
 {
-  "$id": "wistia_videos",
+  "$id": "wistia_wistiaVideos",
   "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
   "name": "Videos-default",
   "entityType": "wistia_Videos",
@@ -7,14 +7,14 @@
     "datePosted",
     "description",
     "richTextDescription",
-    "wistiaVideos_dateUpdated",
-    "wistiaVideos_duration",
-    "wistiaVideos_mediaType",
-    "wistiaVideos_projectName",
-    "wistiaVideos_section",
-    "wistiaVideos_thumbnailPhoto",
-    "wistiaVideos_videoURL",
-    "wistiaVidoes_assetsList"
+    "wistia_dateUpdated",
+    "wistia_duration",
+    "wistia_mediaType",
+    "wistia_projectName",
+    "wistia_section",
+    "wistia_thumbnailPhoto",
+    "wistia_videoURL",
+    "wistia_assetsList"
   ],
   "required": []
 }
