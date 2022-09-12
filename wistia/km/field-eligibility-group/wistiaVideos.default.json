@@ -2,7 +2,7 @@
   "$id": "wistia_wistiaVideos",
   "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
   "name": "Videos-default",
-  "entityType": "wistia_Videos",
+  "entityType": "wistia_wistiaVideos",
   "fields": [
     "datePosted",
     "description",
