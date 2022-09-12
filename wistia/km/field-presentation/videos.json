@@ -1,7 +1,7 @@
 {
-  "$id": "wistia_videos",
+  "$id": "wistia_wistiaVideos",
   "$schema": "https://schema.yext.com/config/km/field-presentation/v1",
-  "entityType": "wistia_Videos",
+  "entityType": "wistia_wistiaVideos",
   "displayName": "Videos",
   "presentationEntries": [
     {
@@ -33,25 +33,28 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "wistiaVidoes_assetsList"
+          "id": "wistia_assetsList"
         },
         {
-          "id": "wistiaVideos_mediaType"
+          "id": "wistia_mediaType"
         },
         {
-          "id": "wistiaVideos_duration"
+          "id": "wistia_duration"
         },
         {
-          "id": "wistiaVideos_dateUpdated"
+          "id": "wistia_dateUpdated"
         },
         {
-          "id": "wistiaVideos_projectName"
+          "id": "wistia_projectName"
         },
         {
-          "id": "wistiaVideos_section"
+          "id": "wistia_section"
         },
         {
-          "id": "wistiaVideos_thumbnailPhoto"
+          "id": "wistia_thumbnailPhoto"
+        },
+        {
+          "id": "wistia_videoURL"
         }
       ]
     },
