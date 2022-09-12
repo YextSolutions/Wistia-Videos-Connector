@@ -37,9 +37,10 @@ This app creates the following custom fields:
 To use this app you will need to have the following before you install:
 
 - Your Wistia bearer token, which you can find in the API tab of Account
-  Settings in your Wistia account
+  Settings in your Wistia account. Note that if you need to generate a new bearer token,
+  you must be the Account Owner.
 
-Follow the step-by-step instructions below to install the Discourse Connector
+Follow the step-by-step instructions below to install the Wistia Connector
 app.
 
 # How to Install
@@ -54,10 +55,10 @@ If you are not an existing customer, but interested in learning more, try out a
 free trial here for a production account, or sign up for Hitchhikers and get
 started with a sandbox account, here <https://hitchhikers.yext.com/>. 
 
-Install the connector to begin pulling in your Wistia videos into your
-Knowledge Graph! All you have to do is provide your Wistia bearer token.
+Install the connector to begin pulling in your Wistia videos into your Knowledge
+Graph! All you have to do is provide your Wistia bearer token.
 
-### To install the Discourse Connector:
+### To install the Wistia Connector:
 
 1. Log in to your Yext account
 2. Navigate to the **Apps > Directory** tab in the platform (or use the link
@@ -66,5 +67,5 @@ Knowledge Graph! All you have to do is provide your Wistia bearer token.
 4. Accept the following changes to your account by clicking **Next** and
    authorize Yext APIs.
 5. Provide your Wistia bearer token.
-7. Wait for the connector to run and see all of your newly created entities in
+6. Wait for the connector to run and see all of your newly created entities in
    the **Knowledge Graph** tab in the platform!
