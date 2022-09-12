@@ -45,7 +45,7 @@ app.
 
 # How to Install
 
-If you are an existing Yext customer, you can install the  Wistia Connector here
+If you are an existing Yext customer, you can install the Wistia Connector here
 [REPLACE ME].
 
 If you are currently using a Yext sandbox account, you can install the Wistia
