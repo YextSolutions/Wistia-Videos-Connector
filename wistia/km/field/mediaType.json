@@ -1,5 +1,5 @@
 {
-  "$id": "wistiaVideos_mediaType",
+  "$id": "wistia_mediaType",
   "$schema": "https://schema.yext.com/config/km/field/v1",
   "displayName": "Media Type",
   "group": "NONE",

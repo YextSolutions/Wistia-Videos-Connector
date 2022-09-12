@@ -1,7 +1,7 @@
 {
-  "$id": "wistiaVideos_duration",
+  "$id": "wistia_duration",
   "$schema": "https://schema.yext.com/config/km/field/v1",
-  "description": "Video duration (in seconds)",
+  "description": "Duration of the media (in seconds).",
   "displayName": "Duration",
   "group": "NONE",
   "localization": "PRIMARY_ONLY",

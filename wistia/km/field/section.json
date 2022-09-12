@@ -1,5 +1,5 @@
 {
-  "$id": "wistiaVideos_section",
+  "$id": "wistia_section",
   "$schema": "https://schema.yext.com/config/km/field/v1",
   "description": "The title of the section in which the media appears.",
   "displayName": "Section",

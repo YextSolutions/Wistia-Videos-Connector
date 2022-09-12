@@ -1,5 +1,5 @@
 {
-  "$id": "wistiaVideos_videoURL",
+  "$id": "wistia_videoURL",
   "$schema": "https://schema.yext.com/config/km/field/v1",
   "description": "The original video URL of the media.",
   "displayName": "Video URL",

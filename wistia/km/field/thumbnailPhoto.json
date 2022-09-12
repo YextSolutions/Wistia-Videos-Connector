@@ -1,6 +1,7 @@
 {
-  "$id": "wistiaVideos_thumbnailPhoto",
+  "$id": "wistia_thumbnailPhoto",
   "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "The thumbnail image URL of the media.",
   "displayName": "Thumbnail Photo",
   "group": "NONE",
   "localization": "PRIMARY_ONLY",

@@ -1,5 +1,5 @@
 {
-  "$id": "wistiaVideos_dateUpdated",
+  "$id": "wistia_dateUpdated",
   "$schema": "https://schema.yext.com/config/km/field/v1",
   "description": "The date when the media was last changed.",
   "displayName": "Date Updated",
