@@ -61,7 +61,7 @@
       },
       {
         "type": "JSON",
-        "header": "Original URL",
+        "header": "Landing Page URL",
         "path": "assets[0].url"
       },
       {
@@ -125,7 +125,7 @@
       ]
     },
     {
-      "field": "wistia_videoURL",
+      "field": "landingPageUrl",
       "header": "Original URL",
       "subfieldPath": []
     },

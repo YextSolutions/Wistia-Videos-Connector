@@ -6,6 +6,7 @@
   "fields": [
     "datePosted",
     "description",
+    "landingPageUrl",
     "richTextDescription",
     "wistia_dateUpdated",
     "wistia_duration",
@@ -13,7 +14,6 @@
     "wistia_projectName",
     "wistia_section",
     "wistia_thumbnailPhoto",
-    "wistia_videoURL",
     "wistia_assetsList"
   ],
   "required": []
