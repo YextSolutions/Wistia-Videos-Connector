@@ -41,7 +41,7 @@
       },
       {
         "type": "JSON",
-        "header": "Video Duration",
+        "header": "Duration",
         "path": "duration"
       },
       {
@@ -126,7 +126,7 @@
     },
     {
       "field": "landingPageUrl",
-      "header": "Original URL",
+      "header": "Landing Page URL",
       "subfieldPath": []
     },
     {
@@ -175,7 +175,7 @@
     },
     {
       "field": "wistia_duration",
-      "header": "Video Duration",
+      "header": "Duration",
       "subfieldPath": []
     },
     {
