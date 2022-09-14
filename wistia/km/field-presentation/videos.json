@@ -55,6 +55,9 @@
         },
         {
           "id": "wistia_thumbnailPhoto"
+        },
+        {
+          "id": "wistia_hashedID"
         }
       ]
     },

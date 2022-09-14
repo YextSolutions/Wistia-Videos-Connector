@@ -5,13 +5,29 @@
   "entityType": "wistia_wistiaVideos",
   "source": {
     "sourceConfig": {
-      "nativeSourceConfig": {
-        "source": "wistia",
-        "operation": "fetchVideos",
-        "inputs": {
-          "bearerToken": "${{bearerToken}}"
-        }
+      "apiPullConfig": {
+        "requestType": "GET",
+        "url": "https://api.wistia.com/v1/medias.json",
+        "authentication": {
+          "bearerToken": "${{km/connector.wistia_wistiaVideosConnector.api_bearer_token}}"
+        },
+        "paginationControl": {
+          "pageBasedPagination": {
+            "pageKey": "page",
+            "pageStartValue": 1,
+            "limitKey": "per_page",
+            "limitValue": 100
+          }
+        },
+        "headers": {},
+        "queryParams": {},
+        "dataFormat": "JSON"
       }
+    },
+    "baseSelector": {
+      "type": "JSON",
+      "header": "Entity Container",
+      "path": "[*]"
     },
     "selectors": [
       {
@@ -78,6 +94,11 @@
         "type": "JSON",
         "header": "Section",
         "path": "section"
+      },
+      {
+        "type": "JSON",
+        "header": "Hashed ID",
+        "path": "hashed_ID"
       }
     ]
   },
@@ -194,6 +215,11 @@
           "name": "assetURL"
         }
       ]
+    },
+    {
+      "field": "wistia_hashedID",
+      "header": "Hashed ID",
+      "subfieldPath": []
     }
   ]
 }

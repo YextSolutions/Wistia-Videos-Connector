@@ -1,0 +1,14 @@
+{
+  "$id": "wistia_hashedID",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "Hashed ID of the media.",
+  "displayName": "Hashed ID",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "stringType": {
+      "stereotype": "SIMPLE"
+    }
+  },
+  "typeId": "string"
+}
