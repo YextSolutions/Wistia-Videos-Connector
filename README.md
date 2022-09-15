@@ -26,6 +26,7 @@ This app creates the following custom fields:
 - wistia_assetsList
 - wistia_dateUpdated
 - wistia_duration
+- wistia_hashedID
 - wistia_mediaType
 - wistia_projectName
 - wistia_section
