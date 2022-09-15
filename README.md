@@ -14,7 +14,7 @@ install this app, you will need Wistia and Yext accounts.
 
 This app creates the following custom connectors:
 
-- wista_wistiaVideosConnector
+- wistia_wistiaVideosConnector
 
 This app creates the following custom entity type that correlates to the custom
 connector:
