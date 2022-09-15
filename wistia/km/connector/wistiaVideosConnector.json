@@ -98,7 +98,7 @@
       {
         "type": "JSON",
         "header": "Hashed ID",
-        "path": "hashed_ID"
+        "path": "hashed_id"
       }
     ]
   },
