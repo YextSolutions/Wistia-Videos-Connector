@@ -1,5 +1,5 @@
 {
-  "$id": "wista_wistiaVideosConnector",
+  "$id": "wistia_wistiaVideosConnector",
   "$schema": "https://schema.yext.com/config/km/connector/v3",
   "displayName": "Wistia Videos Connector",
   "entityType": "wistia_wistiaVideos",
