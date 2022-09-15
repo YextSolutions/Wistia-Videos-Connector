@@ -14,7 +14,8 @@
     "wistia_projectName",
     "wistia_section",
     "wistia_thumbnailPhoto",
-    "wistia_assetsList"
+    "wistia_assetsList",
+    "wistia_hashedID"
   ],
   "required": []
 }
