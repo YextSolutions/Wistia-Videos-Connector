@@ -5,7 +5,6 @@
   "entityType": "wistia_wistiaVideos",
   "fields": [
     "datePosted",
-    "description",
     "landingPageUrl",
     "richTextDescription",
     "wistia_dateUpdated",
