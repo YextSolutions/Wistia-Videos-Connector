@@ -47,10 +47,10 @@ app.
 # How to Install
 
 If you are an existing Yext customer, you can install the Wistia Connector here
-[REPLACE ME].
+https://www.yext.com/s/me/apps/93034.
 
 If you are currently using a Yext sandbox account, you can install the Wistia
-Connector here [REPLACE ME].
+Connector here https://sandbox.yext.com/s/me/apps/162828.
 
 If you are not an existing customer, but interested in learning more, try out a
 free trial here for a production account, or sign up for Hitchhikers and get
