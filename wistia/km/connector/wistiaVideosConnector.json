@@ -5,29 +5,13 @@
   "entityType": "wistia_wistiaVideos",
   "source": {
     "sourceConfig": {
-      "apiPullConfig": {
-        "requestType": "GET",
-        "url": "https://api.wistia.com/v1/medias.json",
-        "authentication": {
-          "bearerToken": "${{Bearer_Token}}"
-        },
-        "paginationControl": {
-          "pageBasedPagination": {
-            "pageKey": "page",
-            "pageStartValue": 1,
-            "limitKey": "per_page",
-            "limitValue": 100
+      "nativeSourceConfig": {
+        "source": "wistia",
+        "operation": "fetchVideos",
+        "inputs": {
+          "hubspotLinkedAccount": "${{bearerToken}}"
           }
-        },
-        "headers": {},
-        "queryParams": {},
-        "dataFormat": "JSON"
-      }
-    },
-    "baseSelector": {
-      "type": "JSON",
-      "header": "Entity Container",
-      "path": "[*]"
+        }
     },
     "selectors": [
       {
