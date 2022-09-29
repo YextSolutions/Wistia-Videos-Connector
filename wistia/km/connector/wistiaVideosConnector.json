@@ -9,7 +9,7 @@
         "requestType": "GET",
         "url": "https://api.wistia.com/v1/medias.json",
         "authentication": {
-          "bearerToken": "${{Bearer_Token}}"
+          "bearerToken": "${{BearerToken}}"
         },
         "paginationControl": {
           "pageBasedPagination": {
