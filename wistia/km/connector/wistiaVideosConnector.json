@@ -9,7 +9,7 @@
         "source": "wistia",
         "operation": "fetchVideos",
         "inputs": {
-          "hubspotLinkedAccount": "${{bearerToken}}"
+          "bearerToken": "${{bearerToken}}"
           }
         }
     },
