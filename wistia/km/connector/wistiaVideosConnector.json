@@ -66,16 +66,6 @@
       },
       {
         "type": "JSON",
-        "header": "Assets URLs",
-        "path": "assets[].url"
-      },
-      {
-        "type": "JSON",
-        "header": "Assets Types",
-        "path": "assets[].type"
-      },
-      {
-        "type": "JSON",
         "header": "Section",
         "path": "section"
       },
@@ -117,18 +107,6 @@
     }
   ],
   "mappings": [
-    {
-      "field": "wistia_assetsList",
-      "header": "Assets Types",
-      "subfieldPath": [
-        {
-          "name": "singleAsset"
-        },
-        {
-          "name": "assetType"
-        }
-      ]
-    },
     {
       "field": "landingPageUrl",
       "header": "Landing Page URL",
@@ -187,18 +165,6 @@
       "field": "wistia_mediaType",
       "header": "Media Type",
       "subfieldPath": []
-    },
-    {
-      "field": "wistia_assetsList",
-      "header": "Assets URLs",
-      "subfieldPath": [
-        {
-          "name": "singleAsset"
-        },
-        {
-          "name": "assetURL"
-        }
-      ]
     },
     {
       "field": "wistia_hashedID",

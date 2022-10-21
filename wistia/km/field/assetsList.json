@@ -1,9 +1,0 @@
-{
-  "$id": "wistia_assetsList",
-  "$schema": "https://schema.yext.com/config/km/field/v1",
-  "description": "A list of all the assets available for this media, classified by asset URL and asset type.",
-  "displayName": "Assets List",
-  "group": "NONE",
-  "localization": "PRIMARY_ONLY",
-  "typeId": "wistia_assetsList"
-}
