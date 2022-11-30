@@ -10,7 +10,7 @@ analyze the overall impact of your content.
 
 Now, you can extend the reach of your Wistia content even further by syncing all
 video data into your Yext account to power Yext search experiences. In order to
-install this app, you will need to have accounts with both Wistia and Yext.
+install this app, you will need to have both Wistia and Yext accounts.
 
 This app creates the following custom connectors:
 
