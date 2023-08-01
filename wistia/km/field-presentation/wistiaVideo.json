@@ -4,75 +4,75 @@
     "entityType": "wistia_wistiaVideos",
     "displayName": "Wistia Video",
     "presentationEntries": [
-      {
-        "displayName": "Content",
-        "entryType": "DIVIDER"
-      },
-      {
-        "displayName": "Core Information",
-        "entryType": "SECTION",
-        "fields": [
-          {
-            "id": "name",
-            "visibleOnAdd": true
-          },
-          {
-            "id": "entityId",
-            "visibleOnAdd": true
-          },
-          {
-            "id": "landingPageUrl"
-          },
-          {
-            "id": "datePosted"
-          },
-          {
-            "id": "richTextDescription"
-          }
-        ]
-      },
-      {
-        "displayName": "Wistia Video Fields",
-        "entryType": "SECTION",
-        "fields": [
-          {
-            "id": "wistia_dateUpdated"
-          },
-          {
-            "id": "wistia_duration"
-          },
-          {
-            "id": "wistia_hashedID"
-          },
-          {
-            "id": "wistia_mediaType"
-          },
-          {
-            "id": "wistia_projectName"
-          },
-          {
-            "id": "wistia_section"
-          },
-          {
-            "id": "wistia_thumbnailPhoto"
-          }
-        ]
-      },
-      {
-        "displayName": "Other",
-        "entryType": "DIVIDER"
-      },
-      {
-        "displayName": "Internal Use Only",
-        "entryType": "SECTION",
-        "fields": [
-          {
-            "id": "folder"
-          },
-          {
-            "id": "labels"
-          }
-        ]
-      }
+        {
+            "displayName": "Content",
+            "entryType": "DIVIDER"
+        },
+        {
+            "displayName": "Core Information",
+            "entryType": "SECTION",
+            "fields": [
+                {
+                    "id": "name",
+                    "visibleOnAdd": true
+                },
+                {
+                    "id": "entityId",
+                    "visibleOnAdd": true
+                },
+                {
+                    "id": "landingPageUrl"
+                },
+                {
+                    "id": "datePosted"
+                },
+                {
+                    "id": "richTextDescriptionV2"
+                }
+            ]
+        },
+        {
+            "displayName": "Wistia Video Fields",
+            "entryType": "SECTION",
+            "fields": [
+                {
+                    "id": "wistia_dateUpdated"
+                },
+                {
+                    "id": "wistia_duration"
+                },
+                {
+                    "id": "wistia_hashedID"
+                },
+                {
+                    "id": "wistia_mediaType"
+                },
+                {
+                    "id": "wistia_projectName"
+                },
+                {
+                    "id": "wistia_section"
+                },
+                {
+                    "id": "wistia_thumbnailPhoto"
+                }
+            ]
+        },
+        {
+            "displayName": "Other",
+            "entryType": "DIVIDER"
+        },
+        {
+            "displayName": "Internal Use Only",
+            "entryType": "SECTION",
+            "fields": [
+                {
+                    "id": "folder"
+                },
+                {
+                    "id": "labels"
+                }
+            ]
+        }
     ]
-  }
+}

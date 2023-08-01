@@ -1,184 +1,204 @@
 {
-  "$id": "wistia_wistiaVideosConnector",
-  "$schema": "https://schema.yext.com/config/km/connector/v3",
-  "displayName": "Wistia Videos Connector",
-  "entityType": "wistia_wistiaVideos",
-  "source": {
-    "sourceConfig": {
-      "nativeSourceConfig": {
-        "source": "wistia",
-        "operation": "fetchVideos",
-        "inputs": {
-          "bearerToken": "${{bearerToken}}"
-          }
-        }
+    "$id": "wistia_wistiaVideosConnector",
+    "$schema": "https://schema.yext.com/config/km/connector/v4",
+    "displayName": "Wistia Videos Connector",
+    "entityTypes": [
+        "wistia_wistiaVideos"
+    ],
+    "source": {
+        "sourceConfig": {
+            "nativeSourceConfig": {
+                "source": "wistia",
+                "operation": "fetchVideos",
+                "inputs": {
+                    "bearerToken": "${{bearerToken}}"
+                }
+            }
+        },
+        "selectors": [
+            {
+                "type": "JSON",
+                "header": "Entity ID",
+                "path": "id"
+            },
+            {
+                "type": "JSON",
+                "header": "Name",
+                "path": "name"
+            },
+            {
+                "type": "JSON",
+                "header": "Media Type",
+                "path": "type"
+            },
+            {
+                "type": "JSON",
+                "header": "Date Posted",
+                "path": "created"
+            },
+            {
+                "type": "JSON",
+                "header": "Date Updated",
+                "path": "updated"
+            },
+            {
+                "type": "JSON",
+                "header": "Duration",
+                "path": "duration"
+            },
+            {
+                "type": "JSON",
+                "header": "Description",
+                "path": "description"
+            },
+            {
+                "type": "JSON",
+                "header": "Thumbnail Photo",
+                "path": "thumbnail.url"
+            },
+            {
+                "type": "JSON",
+                "header": "Project Name",
+                "path": "project.name"
+            },
+            {
+                "type": "JSON",
+                "header": "Landing Page URL",
+                "path": "assets[0].url"
+            },
+            {
+                "type": "JSON",
+                "header": "Section",
+                "path": "section"
+            },
+            {
+                "type": "JSON",
+                "header": "Hashed ID",
+                "path": "hashed_id"
+            }
+        ]
     },
-    "selectors": [
-      {
-        "type": "JSON",
-        "header": "Entity ID",
-        "path": "id"
-      },
-      {
-        "type": "JSON",
-        "header": "Name",
-        "path": "name"
-      },
-      {
-        "type": "JSON",
-        "header": "Media Type",
-        "path": "type"
-      },
-      {
-        "type": "JSON",
-        "header": "Date Posted",
-        "path": "created"
-      },
-      {
-        "type": "JSON",
-        "header": "Date Updated",
-        "path": "updated"
-      },
-      {
-        "type": "JSON",
-        "header": "Duration",
-        "path": "duration"
-      },
-      {
-        "type": "JSON",
-        "header": "Description",
-        "path": "description"
-      },
-      {
-        "type": "JSON",
-        "header": "Thumbnail Photo",
-        "path": "thumbnail.url"
-      },
-      {
-        "type": "JSON",
-        "header": "Project Name",
-        "path": "project.name"
-      },
-      {
-        "type": "JSON",
-        "header": "Landing Page URL",
-        "path": "assets[0].url"
-      },
-      {
-        "type": "JSON",
-        "header": "Section",
-        "path": "section"
-      },
-      {
-        "type": "JSON",
-        "header": "Hashed ID",
-        "path": "hashed_id"
-      }
-    ]
-  },
-  "transforms": [
-    {
-      "extractText": {
-        "inputHeader": "Date Posted",
-        "newColumnHeader": "Date Posted - Formatted",
-        "extractOperation": "ALL_TEXT_BEFORE",
-        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
-        "valueToFind": {
-          "plainText": {
-            "value": "T",
-            "ignoreCase": false
-          }
-        }
-      }
-    },
-    {
-      "extractText": {
-        "inputHeader": "Date Updated",
-        "newColumnHeader": "Date Updated - Formatted",
-        "extractOperation": "ALL_TEXT_BEFORE",
-        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
-        "valueToFind": {
-          "plainText": {
-            "value": "T",
-            "ignoreCase": false
-          }
-        }
-      }
-    }
-  ],
-  "mappings": [
-    {
-      "field": "landingPageUrl",
-      "header": "Landing Page URL",
-      "subfieldPath": []
-    },
-    {
-      "field": "richTextDescription",
-      "header": "Description",
-      "subfieldPath": []
-    },
-    {
-      "field": "wistia_thumbnailPhoto",
-      "header": "Thumbnail Photo",
-      "subfieldPath": [
+    "transforms": [
         {
-          "name": "url"
+            "extractText": {
+                "inputHeader": "Date Posted",
+                "newColumnHeader": "Date Posted - Formatted",
+                "extractOperation": "ALL_TEXT_BEFORE",
+                "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+                "valueToFind": {
+                    "plainText": {
+                        "value": "T",
+                        "ignoreCase": false
+                    }
+                }
+            }
+        },
+        {
+            "extractText": {
+                "inputHeader": "Date Updated",
+                "newColumnHeader": "Date Updated - Formatted",
+                "extractOperation": "ALL_TEXT_BEFORE",
+                "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+                "valueToFind": {
+                    "plainText": {
+                        "value": "T",
+                        "ignoreCase": false
+                    }
+                }
+            }
+        },
+        {
+            "convertToRichText": {
+                "inputHeaders": {
+                    "headers": [
+                        "Description"
+                    ]
+                },
+                "inputFormat": "HTML"
+            }
         }
-      ]
+    ],
+    "mappings": [
+        {
+            "field": "landingPageUrl",
+            "header": "Landing Page URL",
+            "subfieldPath": []
+        },
+        {
+            "field": "richTextDescriptionV2",
+            "header": "Description",
+            "subfieldPath": [
+                {
+                    "name": "json"
+                }
+            ]
+        },
+        {
+            "field": "wistia_thumbnailPhoto",
+            "header": "Thumbnail Photo",
+            "subfieldPath": [
+                {
+                    "name": "url"
+                }
+            ]
+        },
+        {
+            "field": "datePosted",
+            "header": "Date Posted - Formatted",
+            "subfieldPath": []
+        },
+        {
+            "field": "wistia_section",
+            "header": "Section",
+            "subfieldPath": []
+        },
+        {
+            "field": "name",
+            "header": "Name",
+            "subfieldPath": []
+        },
+        {
+            "field": "wistia_projectName",
+            "header": "Project Name",
+            "subfieldPath": []
+        },
+        {
+            "field": "entityId",
+            "header": "Entity ID",
+            "subfieldPath": []
+        },
+        {
+            "field": "wistia_dateUpdated",
+            "header": "Date Updated - Formatted",
+            "subfieldPath": []
+        },
+        {
+            "field": "wistia_duration",
+            "header": "Duration",
+            "subfieldPath": []
+        },
+        {
+            "field": "wistia_mediaType",
+            "header": "Media Type",
+            "subfieldPath": []
+        },
+        {
+            "field": "wistia_hashedID",
+            "header": "Hashed ID",
+            "subfieldPath": []
+        }
+    ],
+    "scheduleConfig": {
+        "customSchedule": {
+            "timeZone": "America/New_York",
+            "startDate": "2022-09-14",
+            "startTime": "00:00",
+            "frequencyType": "DAILY"
+        },
+        "runMode": "COMPREHENSIVE"
     },
-    {
-      "field": "datePosted",
-      "header": "Date Posted - Formatted",
-      "subfieldPath": []
-    },
-    {
-      "field": "wistia_section",
-      "header": "Section",
-      "subfieldPath": []
-    },
-    {
-      "field": "name",
-      "header": "Name",
-      "subfieldPath": []
-    },
-    {
-      "field": "wistia_projectName",
-      "header": "Project Name",
-      "subfieldPath": []
-    },
-    {
-      "field": "entityId",
-      "header": "Entity ID",
-      "subfieldPath": []
-    },
-    {
-      "field": "wistia_dateUpdated",
-      "header": "Date Updated - Formatted",
-      "subfieldPath": []
-    },
-    {
-      "field": "wistia_duration",
-      "header": "Duration",
-      "subfieldPath": []
-    },
-    {
-      "field": "wistia_mediaType",
-      "header": "Media Type",
-      "subfieldPath": []
-    },
-    {
-      "field": "wistia_hashedID",
-      "header": "Hashed ID",
-      "subfieldPath": []
+    "comprehensiveModeConfig": {
+        "comprehensiveSet": "ENTITIES_CREATED_BY_THIS_CONNECTOR",
+        "actionOnMissingEntities": "DELETE"
     }
-  ],
-  "scheduleConfig": {
-    "customSchedule": {
-      "timeZone": "America/New_York",
-      "startDate": "2022-09-14",
-      "startTime": "00:00",
-      "frequencyType": "DAILY"
-    },
-    "runMode": "COMPREHENSIVE"
-  }
 }

@@ -1,19 +1,19 @@
 {
-  "$id": "wistia_wistiaVideos",
-  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
-  "name": "Videos-default",
-  "entityType": "wistia_wistiaVideos",
-  "fields": [
-    "datePosted",
-    "landingPageUrl",
-    "richTextDescription",
-    "wistia_dateUpdated",
-    "wistia_duration",
-    "wistia_mediaType",
-    "wistia_projectName",
-    "wistia_section",
-    "wistia_thumbnailPhoto",
-    "wistia_hashedID"
-  ],
-  "required": []
+    "$id": "wistia_wistiaVideos",
+    "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+    "name": "Videos-default",
+    "entityType": "wistia_wistiaVideos",
+    "fields": [
+        "datePosted",
+        "landingPageUrl",
+        "richTextDescriptionV2",
+        "wistia_dateUpdated",
+        "wistia_duration",
+        "wistia_mediaType",
+        "wistia_projectName",
+        "wistia_section",
+        "wistia_thumbnailPhoto",
+        "wistia_hashedID"
+    ],
+    "required": []
 }
